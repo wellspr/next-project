@@ -13,3 +13,13 @@ body {
     width: 100vw;
     box-sizing: border-box;
 }
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}

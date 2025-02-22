@@ -1,4 +1,6 @@
+import { Header } from "@/layout/Header";
 import "@/sass/main.scss";
+import { ThemeContext } from "@/themes/ThemeContext";
 
 import type { Metadata } from "next";
 
@@ -14,9 +16,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>
+			<ThemeContext>
+				<Header />
 				{children}
-			</body>
+			</ThemeContext>
 		</html>
 	);
 }
