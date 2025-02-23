@@ -1,5 +1,6 @@
+import "./header.scss";
 import Link from "next/link";
-import { Brand } from "../components/Brand";
+import { Brand } from "../../components/Brand";
 import { paths } from "@/config";
 
 export const Header = () => {
@@ -15,4 +16,4 @@ export const Header = () => {
             </ul>
         </nav>
     </header>
-}
+};

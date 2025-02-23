@@ -1,0 +1,23 @@
+body {
+    .light {
+        background-color: #ddddff;
+
+        --color-dark: #111111;
+        --hover-color: #333;
+        
+        --color-light: #bbbbdd;
+
+        color: var(--color-dark);
+    }
+
+    .dark {
+        background-color: #111;
+
+        --color-light: #bbbbdd;
+        --hover-color: #ddddff;
+        
+        --color-dark: #111111;
+
+        color: var(--color-light);
+    }
+}

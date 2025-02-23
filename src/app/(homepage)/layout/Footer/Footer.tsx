@@ -1,8 +1,8 @@
+import "./footer.scss";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
 import Link from "next/link";
 
 export const Footer = () => {
-
     return (
         <footer className="footer">
             <div className="footer__content">

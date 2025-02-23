@@ -1,8 +1,8 @@
 "use client";
 
-import "./sass/theme-switcher.scss";
+import "./theme-switcher.scss";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../Context/ThemeContext";
 
 export const ThemeSwitcher = () => {
 
@@ -25,4 +25,4 @@ export const ThemeSwitcher = () => {
             }
         </div>
     );
-}
+};

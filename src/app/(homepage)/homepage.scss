@@ -16,8 +16,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-size: 1.1rem;
+    
+    background-image: radial-gradient(circle, #555, #222, #000);
+
+    --color-light: #bbbbdd;
+    --color-dark: #111111;
+    --hover-color: #ddddff;
+
+    color: var(--color-light);
 }
 
 ul {
     list-style: none;
 }
+
+
+
+//.homepage {}

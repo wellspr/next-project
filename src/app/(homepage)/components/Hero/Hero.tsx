@@ -21,8 +21,9 @@ export const Hero = () => {
                                         <h4 className="hero__content__features__list__item__headline">
                                             {feature.headline}
                                         </h4>
+                                        <div className={`hero__content__features__list__item__image hero__content__features__list__item__image--${feature.image.id}`}></div>
                                         <span className="hero__content__features__list__item__description">
-                                            {feature.description}
+                                            {feature.description}{"."}
                                         </span>
                                     </li>
                                 );
@@ -33,7 +34,7 @@ export const Hero = () => {
 
                 <div className="hero__content__call-to-action">
                     <button className="hero__content__call-to-action__button">
-                        Create an Account
+                        Get started
                     </button>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import "./sass/themes.scss";
+import "./themes.scss";
 
 import { createContext, useContext, useState } from "react";
 
@@ -28,9 +28,7 @@ export const ThemeContext = ({ children }: { children: React.ReactNode }) => {
     }
 
     return <Context.Provider value={value}>
-        <body className={mode}>
-            {children}
-        </body>
+        {children}
     </Context.Provider>
 };
 
