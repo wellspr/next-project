@@ -1,0 +1,63 @@
+//.homepage {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+
+    &__nav {
+        &__menu {
+            &__item {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        color: var(--hover-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+
+        &__copy {
+            display: flex;
+            gap: 1rem;
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .4rem;
+                color: inherit;
+
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,24 @@
 body.light {
     background-color: #ddddff;
     color: #111;
+
+    --hover-color: #333;
 }
 
 body.dark {
     background-color: #111;
-    color: #aaa;
+
+    --color-light: #bbbbdd;
+    --color-dark: #111111;
+    --hover-color: #ddddff;
+
+    color: var(--color-light);
 }
 
+/* .light {
+
+}
+
+.dark {
+
+} */

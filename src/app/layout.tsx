@@ -1,8 +1,21 @@
-import { Header } from "@/layout/Header";
 import "@/sass/main.scss";
 import { ThemeContext } from "@/themes/ThemeContext";
 
 import type { Metadata } from "next";
+
+import { Josefin_Sans, Montserrat } from "next/font/google";
+
+const josefinSans = Josefin_Sans({
+	subsets: ["latin"],
+	variable: "--josefin-sans",
+	display: "swap"
+});
+
+const montserrat = Montserrat({
+	subsets: ["latin"],
+	variable: "--montserrat",
+	display: "swap",
+})
 
 export const metadata: Metadata = {
 	title: "Next Project - Projects Manager",
@@ -15,9 +28,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className={
+			`${montserrat.className}
+			${josefinSans.variable}
+			${montserrat.variable}`
+		}>
 			<ThemeContext>
-				<Header />
 				{children}
 			</ThemeContext>
 		</html>

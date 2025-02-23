@@ -1,0 +1,17 @@
+.brand {
+
+    &__title {
+
+        font-size: 1.6rem;
+        font-family: var(--josefin-sans);
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: var(--hover-color);
+            }
+        }
+    }
+}
