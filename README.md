@@ -15,3 +15,18 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Content
+
+### Illustrations 
+
+[Undraw](https://undraw)
+
+### Icons
+
+[Tabler](https://tabler.io/icons)
+
+### Fonts
+
+[Google Fonts](https://fonts.google.com/)

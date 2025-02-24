@@ -5,6 +5,9 @@
 
     &__nav {
         &__menu {
+            display: flex;
+            gap: 1rem;
+
             &__item {
                 a {
                     text-decoration: none;
