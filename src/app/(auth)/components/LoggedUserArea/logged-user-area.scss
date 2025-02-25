@@ -1,0 +1,14 @@
+.logged-user-area {
+
+    &__profile-image {
+        position: relative;
+    }
+
+    &__details {
+        position: absolute;
+        right: 20;
+        top: 70;
+        z-index: 1000;
+        background-color: #111;
+    }
+}

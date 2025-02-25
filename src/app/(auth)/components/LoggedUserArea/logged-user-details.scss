@@ -1,0 +1,25 @@
+.logged-user-details {
+    &__email {
+        padding: 1rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.8rem;
+        padding: 1rem;
+
+        &__item {
+            a {
+                text-decoration: none;
+                color: var(--color-light);
+
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+}

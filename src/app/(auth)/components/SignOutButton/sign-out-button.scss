@@ -1,0 +1,14 @@
+.signout {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    color: var(--color-light);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--hover-color);
+        background-color: #222;
+    }
+}

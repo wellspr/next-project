@@ -1,21 +1,28 @@
-import "./header.scss";
-import Link from "next/link";
-import { Brand } from "../../components/Brand";
-import { paths } from "@/config";
-import SignIn from "../../components/SignIn/SignIn";
+"use server";
 
-export const Header = () => {
+import "./header.scss";
+
+import { Brand } from "../../components/Brand";
+import { auth } from "@/auth";
+
+import { LoggedUserArea } from "@/app/(auth)/components/LoggedUserArea";
+import { SignInButton } from "@/app/(auth)/components/SignInButton";
+
+export const Header = async () => {
+
+    const session = await auth();
+
+    if (!session) {
+        return (
+            <header className="header">
+                <Brand />
+                <SignInButton />
+            </header>
+        );
+    }
+
     return <header className="header">
         <Brand />
-        <nav className="header__nav">
-            <ul className="header__nav__menu">
-                <li className="header__nav__menu__item">
-                    <Link href={paths.dashboard.href}>
-                        {paths.dashboard.name}
-                    </Link>
-                </li>
-                <SignIn />
-            </ul>
-        </nav>
+        <LoggedUserArea session={session} />
     </header>
 };
