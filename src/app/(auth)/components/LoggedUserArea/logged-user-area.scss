@@ -1,13 +1,16 @@
 .logged-user-area {
+    position: relative;
 
     &__profile-image {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__details {
         position: absolute;
-        right: 20;
-        top: 70;
+        right: 0;
+        top: 50;
         z-index: 1000;
         background-color: #111;
     }
