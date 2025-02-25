@@ -84,32 +84,24 @@
                         margin: 4rem 0;
                         padding: 2rem;
 
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
                         &--nextProject {
                             background-image: url(./images/next-project.svg);
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center;
                         }
 
                         &--nextOrganize {
                             background-image: url(./images/next-organize.svg);
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center;
                         }
 
                         &--nextProgress {
                             background-image: url(./images/next-progress.svg);
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center;
                         }
 
                         &--nextPortfolio {
                             background-image: url(./images/next-portfolio.svg);
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center;
                         } 
                     }
 
